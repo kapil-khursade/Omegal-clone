@@ -10,3 +10,9 @@ function logoRot(){
 function showLang(){
     document.getElementById("lagOptions").classList.toggle("showLang");
 }
+
+// college student visibility
+function viewCollege(x){
+    x.classList.toggle("collegeSpan");
+    document.querySelector("#lowerMain>div:first-child>div>span").classList.toggle("collegeSpan");
+}

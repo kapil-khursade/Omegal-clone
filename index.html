@@ -32,16 +32,15 @@
                 </div>
 
                 <div>
-                <span id="curOnline"></span>Online Now
+                <span id="curOnline"></span>&nbsp online now
                 </div>
             </div>
 
         </div>
     </header>
 
-    <section id="lagOptions">
-        
-
+    <section id="lagOptions" class="showLang" onclick="showLang()">
+        <h5>Select Langauge ></h5>
     </section>
 
     <main>
@@ -58,21 +57,62 @@
             </p>
             <p>
                 To help you stay safe, chats are anonymous unless you tell someone who you are (not recommended!), 
-                and you can stop a chat at any time. See our Terms of Service and Community Guidelines for more 
+                and you can stop a chat at any time. See our <a href="http://127.0.0.1:5500/index.html">Terms of Service</a> and <a href="https://www.omegle.com/static/guidelines.html"> Community Guidelines</a> for more 
                 info about the do’s and don’ts in using Omegle. Omegle video chat is moderated but no moderation 
                 is perfect. Users are solely responsible for their behavior while using Omegle.
             </p>
             <p>
-                <span>YOU MUST BE 18 OR OLDER TO USE OMEGLE. </span>See Omegle’s Terms of Service for more info. Parental control 
+                <b>YOU MUST BE 18 OR OLDER TO USE OMEGLE. </b>See Omegle’s <a href="http://127.0.0.1:5500/index.html">Terms of Service</a> for more info. Parental control 
                 protections that may assist parents are commercially available and you can find more info at 
-                https://www.connectsafely.org/controls/ as well as other sites.
+               <a href="https://www.connectsafely.org/controls/ ">https://www.connectsafely.org/controls/ </a> as well as other sites.
             </p>
             <p>
                 Please leave Omegle and visit an adult site instead if that's what you're looking for, and you are 18 or older.
             </p>
 
             <div id="mod">Video is monitored. Keep it clean <img src="https://www.omegle.com/static/exclamationog.png" alt="exclaim"></div>
+
+        <!-- intrest section -->
+        <div id="lowerMain">
+            <div>
+                <p>What do you wanna talk about?</p>
+                <input type="text" placeholder="Your intrest (Optional)">
+                <div>
+                    <div onclick="viewCollege(this)">
+                        &#9655;
+                        <b>College student</b>
+                        chat
+                    </div>
+                    <span class="collegeSpan">
+                        <p>
+                            Please enter a college email address ending in <b>.edu or .edu.XX or 
+                            .ac.XX</b> to verify you're in college. This will allow you to chat 
+                            with other college students.
+                        </p>
+                        <form action=""><input type="text"> <button>Go</button> </form>
+                        
+                        <p>
+                            <b>We WON'T spam you, sell your address, or save it.</b><br>
+                            We'll email you to verify your college address, and that's all. 
+                            Other users won't see your address, only the domain 
+                            (the part after the @ sign).
+                        </p>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <p>Start chatting:</p>
+                <span>
+                    <button>Text</button>
+                    or
+                    <button>Vedio</button>
+                </span>
+                <span>Unmodarated Section</span>
+            </div>
         </div>
+        
+        </div>
+
     </main>
     
 </body>
